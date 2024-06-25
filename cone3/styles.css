@@ -1,0 +1,214 @@
+/* General Styles */
+body, html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styles */
+.dashboard_sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.dashboard_logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dashboard_sidebar_user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard_sidebar_user img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.dashboard_sidebar_user span {
+  font-size: 18px;
+}
+
+.dashboard_sidebar_menus {
+  width: 100%;
+}
+
+.dashboard_menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard_menu_list li {
+  width: 100%;
+}
+
+.dashboard_menu_list li a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.dashboard_menu_list li a:hover {
+  background-color: #e21f1f;
+}
+
+.dashboard_menu_list li a i {
+  margin-right: 10px;
+}
+
+/* Content Styles */
+.dashboard_content {
+  flex: 1;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard_content_topNav {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard_content_topNav a {
+  color: #333;
+  font-size: 20px;
+}
+
+.dashboard_content_topNav a:hover {
+  color: #007bff;
+}
+
+.dashboard_content_main {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#adminDashboard, #adminProducts, #userDashboard, #userProducts {
+  display: none;
+}
+
+#adminDashboard.active, #adminProducts.active, #userDashboard.active, #userProducts.active {
+  display: block;
+}
+
+/* Product Form Styles */
+.product_form {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product_form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_form label {
+  margin: 10px 0 5px;
+}
+
+.product_form input, .product_form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product_form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product_form button:hover {
+  background-color: #0056b3;
+}
+
+/* Product List Styles */
+.product_list {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product_list h3 {
+  margin-top: 0;
+}
+
+.product_list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product_list table, .product_list th, .product_list td {
+  border: 1px solid #ddd;
+}
+
+.product_list th, .product_list td {
+  padding: 10px;
+  text-align: left;
+}
+
+.product_list th {
+  background-color: #f4f4f4;
+}
+
+.product_list .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.product_list .actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.product_list .actions .approve {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.product_list .actions .edit {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+.product_list .actions .delete {
+  background-color: #d9534f;
+  color: #fff;
+}

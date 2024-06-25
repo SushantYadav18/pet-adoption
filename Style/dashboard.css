@@ -1,0 +1,132 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-image: url(https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600);  */
+  background-image: url(photos/bgphotos111.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.dashboard {
+  display: flex;
+  background-color: #5862f4;
+  color: #8c8888;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  border: none;
+  border-color: black;
+  border-radius: 60%;
+
+ 
+}
+
+.dashboard a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0px 10px;
+  font-weight: bold;
+}
+
+.dashboard a:hover {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.admin-button,
+.adoption-register-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.admin-button:hover,
+.adoption-register-button:hover {
+  background-color: #45a049;
+}
+
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-around;
+  color: #000;
+}
+
+.pet-photo:hover {
+  transform: scale(1.5);
+  overflow: hidden;
+  transition: 2s;
+}
+.pet-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pet-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.pet-photo {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #56bbed;
+  color: #b4eaf1;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+.Footer_link {
+  color: #000;
+}
+footer a {
+  color: #141212;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+.social-icons a:hover {
+  transform: scale(1);
+  transition: 0.5s;
+}

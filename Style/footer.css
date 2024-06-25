@@ -1,0 +1,72 @@
+/* footer style */
+footer {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Position relative for pseudo-elements */
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+.contact-details p {
+  margin: 5px 0;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.social-media a {
+  margin: 0 10px; /* Adjust spacing between social media icons */
+  display: flex;
+  flex-direction: row;
+}
+.social-media {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media a img {
+  width: 30px; /* Adjust size of social media icons */
+  height: 30px; /* Adjust size of social media icons */
+  margin: 5px 0; /* Adjust spacing between social media icons */
+  align-items: start;
+}
+.social-media a img:hover {
+  background: white;
+  transform: scale(1.2);
+  transition: 0.9s;
+}
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.quick-link a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+.quick-link a:hover {
+  color: #f7fafd; /* Hover color for quick links */
+  text-decoration: underline;
+}
